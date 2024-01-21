@@ -3,7 +3,7 @@ import { FormFields } from "../components/Feedback";
 
 export const postFeedback = (body: FormFields) => {
   return axios.post<unknown, AxiosResponse<{ status: "ok" | "not_ok" }>>(
-    "http://localhost:3000/",
+    "http://51.250.27.177:8080/",
     body
   );
 };
